@@ -6,6 +6,15 @@ var quotes = [
     "It takes as much energy to wish as it does to plan"
     ];
 
+
+function updateYaccValue(){
+    const urlParams = new URLSearchParams(window.location.search);
+    const yacc = urlParams.get('yacc');
+    const yaccValue = "this is what yacc needs";
+    if(yacc == "whatshouldibeaskingfor")
+        document.getElementById('quote').innerHTML = yaccValue;
+}
+
 function getRandomQuoteIndex(){
     return Math.floor(Math.random() * quotes.length);
 }
@@ -19,3 +28,4 @@ function updateContent(){
 }
 
 updateContent();
+updateYaccValue();
