@@ -24,7 +24,7 @@ html, body {
 
 
 #content {
-  height: 45em;
+  height: 5em;
 } p {
   max-width: 30em;
   color: white;
@@ -38,6 +38,13 @@ html, body {
   font-variant: small-caps;
   padding-top: 200px;
 }
+p.author {
+  font-size: 1.2em;
+  font-weight: lighter;
+  padding-top: 10px;
+  font-style: italic;
+}
+
 
 p :hover {
   text-decoration: none;
